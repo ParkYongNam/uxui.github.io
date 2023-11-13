@@ -138,6 +138,8 @@ body {
 
         font-size: large;
 
+        z-index: 10000000;
+
         a {
             color: black;
         }
@@ -234,23 +236,22 @@ body {
 
     }
 
+    .mainSwiperTitle {
+        left: 20%;
+        top: 30%;
+        font-family: "Pretendard-Black";
+        font-size: 2rem;
+    }
+
     .mainSwiperImg1 {
         background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
-
-        .mainSwiperTitle {
-            left: 20%;
-            top: 30%;
-            font-family: "Pretendard-Black";
-            font-size: 2rem;
-        }
-
     }
 
 
     .mainSwiperImg2 {
-        background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
-
-
+        // background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
+        background-image: url(https://www.lugstay.com/img/app-device-new.png);
+        background-size: 30%;
     }
 
     .mainSwiperImg3 {
@@ -259,8 +260,27 @@ body {
 
     }
 
-}
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 50px;
+    }
 
+    .swiper-pagination-bullet-active {
+        background: #f04e21;
+    }
+
+    .mainSwiperButton {
+        color: #f04e21 !important;
+
+
+
+        * {
+            color: inherit;
+
+        }
+    }
+
+}
 
 /////////////////////////////////////////////////////////////////
 // @media //

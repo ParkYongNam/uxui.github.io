@@ -110,6 +110,7 @@ body {
   text-align: center;
   background-color: #ede0cb;
   font-size: large;
+  z-index: 10000000;
 }
 #hd .topAd a {
   color: black;
@@ -176,21 +177,35 @@ body {
   background-color: white;
   background-repeat: no-repeat;
 }
-#mainSwiper .mainSwiperImg1 {
-  background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
-}
-#mainSwiper .mainSwiperImg1 .mainSwiperTitle {
+#mainSwiper .mainSwiperTitle {
   left: 20%;
   top: 30%;
   font-family: "Pretendard-Black";
   font-size: 2rem;
 }
+#mainSwiper .mainSwiperImg1 {
+  background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
+}
 #mainSwiper .mainSwiperImg2 {
-  background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
+  background-image: url(https://www.lugstay.com/img/app-device-new.png);
+  background-size: 30%;
 }
 #mainSwiper .mainSwiperImg3 {
   background-image: url(https://www.carryboxstorage.com/img/visual03.2f02c466.svg);
   background-size: 40%;
+}
+#mainSwiper .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 50px;
+}
+#mainSwiper .swiper-pagination-bullet-active {
+  background: #f04e21;
+}
+#mainSwiper .mainSwiperButton {
+  color: #f04e21 !important;
+}
+#mainSwiper .mainSwiperButton * {
+  color: inherit;
 }
 
 @media (max-width: 800px) {

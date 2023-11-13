@@ -9,11 +9,11 @@ window.addEventListener('load', function () {
 
 
         effect: "fade",
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            pasueOnMouseEnter: false,
-        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //     pasueOnMouseEnter: false,
+        // },
 
         // If we need pagination
         pagination: {
