@@ -16,13 +16,13 @@
     <!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--플러그인 swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--플러그인 swiper-->
-    <link rel="stylesheet" href="./CSS/web.min.css">
+    <link rel="stylesheet" href="./CSS/css_pjh.min.css">
     <script src="./js/web.js"></script>
     <script src="./js/jquery.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="hd">
         <!--광고페이지 텍스트 , 로고,로그인,회원가입 ,대메뉴,소메뉴 까지-->
 
         <!-- top AD -->
@@ -31,62 +31,81 @@
         </div>
 
         <!-- logo, language, login, signup-->
-        <div class="topBanner posRel dpFlex jcb aic width1200">
-
-            <img src="./image/logo.png" alt="로고"></img>
-            <div class="topOption">
-                <button>언어선택</button>
-                <button>로그인</button>
-                <button>회원 가입</button>
+        <div class="topBanner posRel dpFlex jcb aic">
+            <div class="container dpFlex jcb aic">
+                <img src="./image/logo.png" alt="로고"></img>
+                <div class="topOption">
+                    <button>ENG <i class="bi bi-globe2"></i></button>
+                    <button>로그인 <i class="bi bi-box-arrow-in-left"></i></button>
+                    <button>회원 가입</button>
+                </div>
             </div>
         </div>
 
-        <div class="topMenu posRel d-flex jcc aic width1200">
-            <ul class=" depth1ul dpFlex jcc aic">
-                <li class="depth1li">
-                    <a href="" class="depth1a">
-                        <h3>마이짐소개</h3>
-                    </a>
-                    <ul class="posAbs depth2ul">
-                        <li><a href="">인삿말</a></li>
-                        <li><a href="">사업소개</a></li>
+        <div class="topMenu posRel">
+            <div class="container dpFlex jcc aic height100">
+                <ul class=" depth1ul dpFlex jcc aic">
+                    <li class="depth1li">
+                        <a href="" class="depth1a">
+                            <h3>마이짐소개</h3>
+                        </a>
+                        <ul class="posAbs depth2ul">
+                            <li><a href="">인삿말</a></li>
+                            <li><a href="">사업소개</a></li>
 
-                    </ul>
+                        </ul>
 
-                </li>
-                <li class="">
-                    <a href="">
-                        <h3>이용하기</h3>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="">
-                        <h3>고객센터</h3>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="">
-                        <h3>리뷰</h3>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="" class="depth1a">
-                        <h3>고객센터</h3>
-                    </a>
-                    <ul class="posAbs depth2ul">
-                        <li><a href="">공지사항</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">1:1상담</a></li>
-                    </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <h3>이용하기</h3>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <h3>고객센터</h3>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <h3>리뷰</h3>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="" class="depth1a">
+                            <h3>고객센터</h3>
+                        </a>
+                        <ul class="posAbs depth2ul">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">1:1상담</a></li>
+                        </ul>
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
 
 
     </header>
     <main>
         <!--슬라이더(회사소개 및 이벤트 등),  지점소개 , 포토 리뷰 , 사이즈 소개 및 상담결제, 띠배너  , 협렵업체 및 이용업체 로고 까지-->
+
+        <div class="container">
+            <div class="mainSwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <!--로고 회사정보 및 연락처 소셜링크-->

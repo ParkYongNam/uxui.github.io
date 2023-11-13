@@ -1,0 +1,225 @@
+/////////////////////////////////////////////////////////////////
+// common //
+/////////////////////////////////////////////////////////////////
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
+}
+
+#hd {
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .posFixed {
+        position: fixed;
+    }
+
+    .posAbs {
+        position: absolute;
+    }
+
+    .posRel {
+        position: relative;
+    }
+
+    .dpFlex {
+        display: flex;
+    }
+
+    .jcb {
+        justify-content: space-between;
+    }
+
+    .jcc {
+        justify-content: center;
+    }
+
+    .aic {
+        align-items: center;
+    }
+
+    .container {
+        margin: auto;
+        width: 1400px;
+    }
+
+    .height100 {
+        height: 100px;
+    }
+
+    /////////////////////////////////////////////////////////////////
+    // font //
+    /////////////////////////////////////////////////////////////////
+
+    @font-face {
+        font-family: 'Pretendard-Black';
+        font-weight: 900;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-ExtraBold';
+        font-weight: 800;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Bold';
+        font-weight: 700;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-SemiBold';
+        font-weight: 600;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Medium';
+        font-weight: 500;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Light';
+        font-weight: 300;
+        font-display: swap;
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    }
+
+    /////////////////////////////////////////////////////////////////
+    // layout //
+    /////////////////////////////////////////////////////////////////
+
+    .topAd {
+        width: 100%;
+        height: 50px;
+
+        top: 0;
+
+        text-align: center;
+        background-color: #ede0cb;
+
+        font-size: large;
+
+        a {
+            color: black;
+        }
+    }
+
+    .topBanner {
+        margin: auto;
+
+        top: 50px;
+
+        // width: 1200px;
+        height: 100px;
+
+        padding: 0 2%;
+
+        background-color: #f04e21;
+
+        // border: 1px solid black;
+        // border-radius: 50px;
+
+
+
+        img {
+            width: 80px;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 30px;
+            border: white;
+            margin-right: 5px;
+        }
+    }
+
+    .topOption {
+        margin-right: 20px;
+    }
+
+    .topMenu {
+
+        top: 50px;
+        margin: auto;
+        height: 100px;
+
+        border-bottom: 3px solid #f04e21;
+
+        li {
+            padding-right: 30px;
+        }
+
+        .depth1ul {
+            margin-bottom: 0;
+
+            :hover .depth2ul {
+                height: 150px;
+            }
+
+        }
+
+        .depth1a {
+            line-height: 100px;
+        }
+
+        .depth2ul {
+            line-height: 50px;
+            top: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            z-index: 100;
+        }
+
+
+
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////
+// @media //
+/////////////////////////////////////////////////////////////////
+
+@media (max-width: 800px) {
+    #hd {
+
+        h3 {
+            font-size: 1.0rem;
+        }
+    }
+}
