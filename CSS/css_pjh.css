@@ -8,46 +8,59 @@ body {
   font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
 }
 
-#hd a {
+#hd a,
+#mainSwiper a {
   text-decoration: none;
   color: black;
 }
-#hd ul {
+#hd ul,
+#mainSwiper ul {
   list-style: none;
 }
-#hd li {
+#hd li,
+#mainSwiper li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-#hd .posFixed {
+#hd .posFixed,
+#mainSwiper .posFixed {
   position: fixed;
 }
-#hd .posAbs {
+#hd .posAbs,
+#mainSwiper .posAbs {
   position: absolute;
 }
-#hd .posRel {
+#hd .posRel,
+#mainSwiper .posRel {
   position: relative;
 }
-#hd .dpFlex {
+#hd .dpFlex,
+#mainSwiper .dpFlex {
   display: flex;
 }
-#hd .jcb {
+#hd .jcb,
+#mainSwiper .jcb {
   justify-content: space-between;
 }
-#hd .jcc {
+#hd .jcc,
+#mainSwiper .jcc {
   justify-content: center;
 }
-#hd .aic {
+#hd .aic,
+#mainSwiper .aic {
   align-items: center;
 }
-#hd .container {
+#hd .container,
+#mainSwiper .container {
   margin: auto;
   width: 1400px;
 }
-#hd .height100 {
+#hd .height100,
+#mainSwiper .height100 {
   height: 100px;
 }
+
 @font-face {
   font-family: "Pretendard-Black";
   font-weight: 900;
@@ -134,6 +147,7 @@ body {
 }
 #hd .topMenu .depth1ul :hover .depth2ul {
   height: 150px;
+  background-color: #f04e21;
 }
 #hd .topMenu .depth1a {
   line-height: 100px;
@@ -145,6 +159,38 @@ body {
   overflow: hidden;
   transition: 0.5s;
   z-index: 100;
+}
+
+#mainSwiper {
+  position: relative;
+  top: 100px;
+}
+#mainSwiper .swiper-slide {
+  height: 0;
+  padding-top: 43%;
+  /* width 100% 조건이 내장되어야 한다  */
+  /* 화면 사이즈에 맞게 해상도를 자동 조절시키기 위해 bground-image 태그를 사용
+  height 0 으로 주고, padding-top 요소를 사용하여 이미지의 height 백분율을 계산하여 % 로 넣어준다 */
+  background-position: 85% center;
+  background-size: 45%;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+#mainSwiper .mainSwiperImg1 {
+  background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
+}
+#mainSwiper .mainSwiperImg1 .mainSwiperTitle {
+  left: 20%;
+  top: 30%;
+  font-family: "Pretendard-Black";
+  font-size: 2rem;
+}
+#mainSwiper .mainSwiperImg2 {
+  background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
+}
+#mainSwiper .mainSwiperImg3 {
+  background-image: url(https://www.carryboxstorage.com/img/visual03.2f02c466.svg);
+  background-size: 40%;
 }
 
 @media (max-width: 800px) {

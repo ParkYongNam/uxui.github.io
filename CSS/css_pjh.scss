@@ -11,7 +11,8 @@ body {
     font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
 }
 
-#hd {
+#hd,
+#mainSwiper {
 
     a {
         text-decoration: none;
@@ -65,62 +66,66 @@ body {
         height: 100px;
     }
 
-    /////////////////////////////////////////////////////////////////
-    // font //
-    /////////////////////////////////////////////////////////////////
+}
 
-    @font-face {
-        font-family: 'Pretendard-Black';
-        font-weight: 900;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
-    }
+/////////////////////////////////////////////////////////////////
+// font //
+/////////////////////////////////////////////////////////////////
 
-    @font-face {
-        font-family: 'Pretendard-ExtraBold';
-        font-weight: 800;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-Black';
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+}
 
-    @font-face {
-        font-family: 'Pretendard-Bold';
-        font-weight: 700;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    font-weight: 800;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
 
-    @font-face {
-        font-family: 'Pretendard-SemiBold';
-        font-weight: 600;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-Bold';
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
 
-    @font-face {
-        font-family: 'Pretendard-Medium';
-        font-weight: 500;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    font-weight: 600;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
 
-    @font-face {
-        font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-Medium';
+    font-weight: 500;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
 
-    @font-face {
-        font-family: 'Pretendard-Light';
-        font-weight: 300;
-        font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
-    }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
 
-    /////////////////////////////////////////////////////////////////
-    // layout //
-    /////////////////////////////////////////////////////////////////
+@font-face {
+    font-family: 'Pretendard-Light';
+    font-weight: 300;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+
+/////////////////////////////////////////////////////////////////
+// layout //
+/////////////////////////////////////////////////////////////////
+
+#hd {
 
     .topAd {
         width: 100%;
@@ -152,8 +157,6 @@ body {
 
         // border: 1px solid black;
         // border-radius: 50px;
-
-
 
         img {
             width: 80px;
@@ -188,6 +191,7 @@ body {
 
             :hover .depth2ul {
                 height: 150px;
+                background-color: #f04e21;
             }
 
         }
@@ -208,6 +212,53 @@ body {
 
 
     }
+}
+
+
+#mainSwiper {
+
+    position: relative;
+    top: 100px;
+
+    .swiper-slide {
+        height: 0;
+        padding-top: 43%;
+        /* width 100% 조건이 내장되어야 한다  */
+        /* 화면 사이즈에 맞게 해상도를 자동 조절시키기 위해 bground-image 태그를 사용
+        height 0 으로 주고, padding-top 요소를 사용하여 이미지의 height 백분율을 계산하여 % 로 넣어준다 */
+
+        background-position: 85% center;
+        background-size: 45%;
+        background-color: white;
+        background-repeat: no-repeat;
+
+    }
+
+    .mainSwiperImg1 {
+        background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
+
+        .mainSwiperTitle {
+            left: 20%;
+            top: 30%;
+            font-family: "Pretendard-Black";
+            font-size: 2rem;
+        }
+
+    }
+
+
+    .mainSwiperImg2 {
+        background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
+
+
+    }
+
+    .mainSwiperImg3 {
+        background-image: url(https://www.carryboxstorage.com/img/visual03.2f02c466.svg);
+        background-size: 40%;
+
+    }
+
 }
 
 

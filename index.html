@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--플러그인 swiper-->
     <link rel="stylesheet" href="./CSS/css_pjh.min.css">
     <script src="./js/web.js"></script>
-    <script src="./js/jquery.js"></script>
+    <script src="./js/js_pjh.js"></script>
 </head>
 
 <body>
@@ -91,20 +91,27 @@
     <main>
         <!--슬라이더(회사소개 및 이벤트 등),  지점소개 , 포토 리뷰 , 사이즈 소개 및 상담결제, 띠배너  , 협렵업체 및 이용업체 로고 까지-->
 
-        <div class="container">
-            <div class="mainSwiper">
+        <div id="mainSwiper">
+            <div class="container swiper">
 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide mainSwiperImg1 posRel">
+                        <div class="mainSwiperTitle posAbs">
+                            " 개인을 위한 안전하고 편리한"
+                        </div>
+                    </div>
+                    <div class="swiper-slide mainSwiperImg2"></div>
+                    <div class="swiper-slide mainSwiperImg3"></div>
                 </div>
+
                 <div class="swiper-pagination"></div>
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
         </div>
+
+
 
     </main>
     <footer>
