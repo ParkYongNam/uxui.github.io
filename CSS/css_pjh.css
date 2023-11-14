@@ -10,6 +10,7 @@ body {
 
 #hd a,
 #mainSwiper a,
+#businessPartners a,
 #quickMenu a,
 #footer a {
   text-decoration: none;
@@ -17,12 +18,14 @@ body {
 }
 #hd ul,
 #mainSwiper ul,
+#businessPartners ul,
 #quickMenu ul,
 #footer ul {
   list-style: none;
 }
 #hd li,
 #mainSwiper li,
+#businessPartners li,
 #quickMenu li,
 #footer li {
   list-style: none;
@@ -31,54 +34,63 @@ body {
 }
 #hd .posFixed,
 #mainSwiper .posFixed,
+#businessPartners .posFixed,
 #quickMenu .posFixed,
 #footer .posFixed {
   position: fixed;
 }
 #hd .posAbs,
 #mainSwiper .posAbs,
+#businessPartners .posAbs,
 #quickMenu .posAbs,
 #footer .posAbs {
   position: absolute;
 }
 #hd .posRel,
 #mainSwiper .posRel,
+#businessPartners .posRel,
 #quickMenu .posRel,
 #footer .posRel {
   position: relative;
 }
 #hd .dpFlex,
 #mainSwiper .dpFlex,
+#businessPartners .dpFlex,
 #quickMenu .dpFlex,
 #footer .dpFlex {
   display: flex;
 }
 #hd .dpBlock,
 #mainSwiper .dpBlock,
+#businessPartners .dpBlock,
 #quickMenu .dpBlock,
 #footer .dpBlock {
   display: block;
 }
 #hd .jcb,
 #mainSwiper .jcb,
+#businessPartners .jcb,
 #quickMenu .jcb,
 #footer .jcb {
   justify-content: space-between;
 }
 #hd .jcc,
 #mainSwiper .jcc,
+#businessPartners .jcc,
 #quickMenu .jcc,
 #footer .jcc {
   justify-content: center;
 }
 #hd .aic,
 #mainSwiper .aic,
+#businessPartners .aic,
 #quickMenu .aic,
 #footer .aic {
   align-items: center;
 }
 #hd .container,
 #mainSwiper .container,
+#businessPartners .container,
 #quickMenu .container,
 #footer .container {
   margin: auto;
@@ -86,6 +98,7 @@ body {
 }
 #hd .height100,
 #mainSwiper .height100,
+#businessPartners .height100,
 #quickMenu .height100,
 #footer .height100 {
   height: 100px;
@@ -238,6 +251,12 @@ body {
 #mainSwiper .mainSwiperButton * {
   color: inherit;
   --swiper-navigation-size: 75px;
+}
+
+#businessPartners {
+  position: relative;
+  height: 800px;
+  background-color: mint;
 }
 
 #quickMenu .quickMenu {

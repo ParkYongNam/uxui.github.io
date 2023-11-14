@@ -13,6 +13,7 @@ body {
 
 #hd,
 #mainSwiper,
+#businessPartners,
 #quickMenu,
 #footer {
 
@@ -282,6 +283,14 @@ body {
         }
     }
 
+}
+
+#businessPartners {
+    position: relative;
+    height: 800px;
+    background-color: mint;
+
+    
 }
 
 #quickMenu {
