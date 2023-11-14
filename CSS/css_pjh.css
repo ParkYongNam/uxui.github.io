@@ -10,71 +10,84 @@ body {
 
 #hd a,
 #mainSwiper a,
-#quickMenu a {
+#quickMenu a,
+#footer a {
   text-decoration: none;
   color: black;
 }
 #hd ul,
 #mainSwiper ul,
-#quickMenu ul {
+#quickMenu ul,
+#footer ul {
   list-style: none;
 }
 #hd li,
 #mainSwiper li,
-#quickMenu li {
+#quickMenu li,
+#footer li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 #hd .posFixed,
 #mainSwiper .posFixed,
-#quickMenu .posFixed {
+#quickMenu .posFixed,
+#footer .posFixed {
   position: fixed;
 }
 #hd .posAbs,
 #mainSwiper .posAbs,
-#quickMenu .posAbs {
+#quickMenu .posAbs,
+#footer .posAbs {
   position: absolute;
 }
 #hd .posRel,
 #mainSwiper .posRel,
-#quickMenu .posRel {
+#quickMenu .posRel,
+#footer .posRel {
   position: relative;
 }
 #hd .dpFlex,
 #mainSwiper .dpFlex,
-#quickMenu .dpFlex {
+#quickMenu .dpFlex,
+#footer .dpFlex {
   display: flex;
 }
 #hd .dpBlock,
 #mainSwiper .dpBlock,
-#quickMenu .dpBlock {
+#quickMenu .dpBlock,
+#footer .dpBlock {
   display: block;
 }
 #hd .jcb,
 #mainSwiper .jcb,
-#quickMenu .jcb {
+#quickMenu .jcb,
+#footer .jcb {
   justify-content: space-between;
 }
 #hd .jcc,
 #mainSwiper .jcc,
-#quickMenu .jcc {
+#quickMenu .jcc,
+#footer .jcc {
   justify-content: center;
 }
 #hd .aic,
 #mainSwiper .aic,
-#quickMenu .aic {
+#quickMenu .aic,
+#footer .aic {
   align-items: center;
 }
 #hd .container,
 #mainSwiper .container,
-#quickMenu .container {
+#quickMenu .container,
+#footer .container {
   margin: auto;
   width: 1400px;
 }
 #hd .height100,
 #mainSwiper .height100,
-#quickMenu .height100 {
+#quickMenu .height100,
+#footer .height100 {
   height: 100px;
 }
 
@@ -182,6 +195,7 @@ body {
 #mainSwiper {
   position: relative;
   top: 100px;
+  height: 1000px;
 }
 #mainSwiper .swiper-slide {
   height: 0;
@@ -247,6 +261,44 @@ body {
   text-align: center;
   line-height: 3rem;
 }
+
+#footer {
+  background-color: #ede0cb;
+}
+#footer .footer {
+  width: 100%;
+  height: 350px;
+  bottom: 0;
+  left: 0;
+}
+#footer .footer .companyInfo ul {
+  line-height: 2rem;
+  color: rgb(153, 153, 153);
+}
+#footer .footer .companyInfo ul .companyName {
+  line-height: 7rem;
+  font-size: 30px;
+  color: #f04e21;
+}
+#footer .footer .companyInfo ul .termOfUse {
+  line-height: 3rem;
+  color: black;
+}
+#footer .footer .customerService .bi-youtube {
+  color: red;
+  font-size: xx-large;
+}
+#footer .footer .customerService .csCenter {
+  font-size: 30px;
+}
+#footer .footer .customerService .csNumber {
+  line-height: 3rem;
+  font-size: 30px;
+}
+#footer .footer .customerService .hoursOfUse {
+  margin-top: 50px;
+}
+
 @media (max-width: 800px) {
   #hd h3 {
     font-size: 1rem;
