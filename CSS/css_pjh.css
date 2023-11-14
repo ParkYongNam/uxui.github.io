@@ -9,55 +9,72 @@ body {
 }
 
 #hd a,
-#mainSwiper a {
+#mainSwiper a,
+#quickMenu a {
   text-decoration: none;
   color: black;
 }
 #hd ul,
-#mainSwiper ul {
+#mainSwiper ul,
+#quickMenu ul {
   list-style: none;
 }
 #hd li,
-#mainSwiper li {
+#mainSwiper li,
+#quickMenu li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 #hd .posFixed,
-#mainSwiper .posFixed {
+#mainSwiper .posFixed,
+#quickMenu .posFixed {
   position: fixed;
 }
 #hd .posAbs,
-#mainSwiper .posAbs {
+#mainSwiper .posAbs,
+#quickMenu .posAbs {
   position: absolute;
 }
 #hd .posRel,
-#mainSwiper .posRel {
+#mainSwiper .posRel,
+#quickMenu .posRel {
   position: relative;
 }
 #hd .dpFlex,
-#mainSwiper .dpFlex {
+#mainSwiper .dpFlex,
+#quickMenu .dpFlex {
   display: flex;
 }
+#hd .dpBlock,
+#mainSwiper .dpBlock,
+#quickMenu .dpBlock {
+  display: block;
+}
 #hd .jcb,
-#mainSwiper .jcb {
+#mainSwiper .jcb,
+#quickMenu .jcb {
   justify-content: space-between;
 }
 #hd .jcc,
-#mainSwiper .jcc {
+#mainSwiper .jcc,
+#quickMenu .jcc {
   justify-content: center;
 }
 #hd .aic,
-#mainSwiper .aic {
+#mainSwiper .aic,
+#quickMenu .aic {
   align-items: center;
 }
 #hd .container,
-#mainSwiper .container {
+#mainSwiper .container,
+#quickMenu .container {
   margin: auto;
   width: 1400px;
 }
 #hd .height100,
-#mainSwiper .height100 {
+#mainSwiper .height100,
+#quickMenu .height100 {
   height: 100px;
 }
 
@@ -206,10 +223,43 @@ body {
 }
 #mainSwiper .mainSwiperButton * {
   color: inherit;
+  --swiper-navigation-size: 75px;
 }
 
+#quickMenu .quickMenu {
+  right: 10%;
+  bottom: 10%;
+}
+#quickMenu .linkPhone {
+  width: 50px;
+  height: 50px;
+  background-color: #f04e21;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 10px;
+}
+#quickMenu .linkKaKaoTalk {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+}
 @media (max-width: 800px) {
   #hd h3 {
     font-size: 1rem;
+  }
+  #quickMenu .quickMenu {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #quickMenu .quickMenu .linkPhone,
+  #quickMenu .quickMenu .linkKaKaoTalk {
+    width: 50vw;
+    border-radius: 0;
   }
 }

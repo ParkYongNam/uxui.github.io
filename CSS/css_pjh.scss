@@ -12,7 +12,8 @@ body {
 }
 
 #hd,
-#mainSwiper {
+#mainSwiper,
+#quickMenu {
 
     a {
         text-decoration: none;
@@ -43,6 +44,10 @@ body {
 
     .dpFlex {
         display: flex;
+    }
+
+    .dpBlock {
+        display: block;
     }
 
     .jcb {
@@ -150,15 +155,11 @@ body {
 
         top: 50px;
 
-        // width: 1200px;
         height: 100px;
 
         padding: 0 2%;
 
         background-color: #f04e21;
-
-        // border: 1px solid black;
-        // border-radius: 50px;
 
         img {
             width: 80px;
@@ -273,12 +274,55 @@ body {
         color: #f04e21 !important;
 
 
-
         * {
             color: inherit;
-
+            --swiper-navigation-size: 75px;
         }
     }
+
+}
+
+#quickMenu {
+
+
+
+    .quickMenu {
+        right: 10%;
+        bottom: 10%;
+
+    }
+
+    .linkPhone {
+        width: 50px;
+        height: 50px;
+        background-color: #f04e21;
+
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 3rem;
+
+        // 카카오톡 상담 아이콘과 간격 조절
+        margin-bottom: 10px;
+
+        .bi-telephone-fill {}
+
+        // z-index: 10000000000 !important;
+    }
+
+    .linkKaKaoTalk {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 3rem;
+
+        .bi-chat-fill {}
+    }
+
 
 }
 
@@ -291,6 +335,26 @@ body {
 
         h3 {
             font-size: 1.0rem;
+        }
+    }
+
+    #quickMenu {
+        .quickMenu {
+
+            display: flex;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .linkPhone,
+            .linkKaKaoTalk {
+                width: 50vw;
+
+                border-radius: 0;
+
+
+            }
         }
     }
 }
