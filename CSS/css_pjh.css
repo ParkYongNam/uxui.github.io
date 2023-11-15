@@ -255,8 +255,39 @@ body {
 
 #businessPartners {
   position: relative;
-  height: 800px;
-  background-color: mint;
+  width: 100%;
+}
+#businessPartners .partnersTitle {
+  text-align: center;
+  color: #f04e21;
+}
+#businessPartners .swiper-wrapper {
+  transition-timing-function: linear;
+}
+#businessPartners .swiper-slide {
+  height: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+}
+#businessPartners .partnerLogo1 {
+  background-image: url(https://www.lugstay.com/img/partners-logo-mss.png);
+}
+#businessPartners .partnerLogo2 {
+  background-image: url(https://www.lugstay.com/img/main-partners-hub.png);
+}
+#businessPartners .partnerLogo3 {
+  background-image: url(https://www.lugstay.com/img/partners-logo-kto.png);
+}
+#businessPartners .partnerLogo4 {
+  background-image: url(https://www.lugstay.com/img/partners-logo-sto.png);
+}
+#businessPartners .partnerLogo5 {
+  background-image: url(https://www.lugstay.com/img/partners-logo-incheon-airport.png);
+}
+#businessPartners .partnerLogo6 {
+  background-image: url(https://www.lugstay.com/img/partners-logo-sk-telecom.png);
 }
 
 #quickMenu .quickMenu {

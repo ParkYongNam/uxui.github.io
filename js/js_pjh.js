@@ -34,28 +34,20 @@ window.addEventListener('load', function () {
 
         loop: true,
 
+        slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
+        speed: 5000,
+
+
 
         autoplay: {
-            delay: 2500,
+            delay: 0,
             disableOnInteraction: false,
             pasueOnMouseEnter: false,
         },
 
-        // If we need pagination
-        pagination: {
-            el: '#mainSwiper .swiper-pagination',
-
-            // clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '#mainSwiper .swiper-button-next',
-            prevEl: '#mainSwiper .swiper-button-prev',
-        },
-
     });
+
 
 })
