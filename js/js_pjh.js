@@ -39,8 +39,6 @@ window.addEventListener('load', function () {
         centeredSlides: true,
         speed: 5000,
 
-
-
         autoplay: {
             delay: 0,
             disableOnInteraction: false,

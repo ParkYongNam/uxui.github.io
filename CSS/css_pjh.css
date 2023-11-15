@@ -10,6 +10,7 @@ body {
 
 #hd a,
 #mainSwiper a,
+#customForm a,
 #businessPartners a,
 #quickMenu a,
 #footer a {
@@ -18,6 +19,7 @@ body {
 }
 #hd ul,
 #mainSwiper ul,
+#customForm ul,
 #businessPartners ul,
 #quickMenu ul,
 #footer ul {
@@ -25,6 +27,7 @@ body {
 }
 #hd li,
 #mainSwiper li,
+#customForm li,
 #businessPartners li,
 #quickMenu li,
 #footer li {
@@ -34,6 +37,7 @@ body {
 }
 #hd .posFixed,
 #mainSwiper .posFixed,
+#customForm .posFixed,
 #businessPartners .posFixed,
 #quickMenu .posFixed,
 #footer .posFixed {
@@ -41,6 +45,7 @@ body {
 }
 #hd .posAbs,
 #mainSwiper .posAbs,
+#customForm .posAbs,
 #businessPartners .posAbs,
 #quickMenu .posAbs,
 #footer .posAbs {
@@ -48,6 +53,7 @@ body {
 }
 #hd .posRel,
 #mainSwiper .posRel,
+#customForm .posRel,
 #businessPartners .posRel,
 #quickMenu .posRel,
 #footer .posRel {
@@ -55,6 +61,7 @@ body {
 }
 #hd .dpFlex,
 #mainSwiper .dpFlex,
+#customForm .dpFlex,
 #businessPartners .dpFlex,
 #quickMenu .dpFlex,
 #footer .dpFlex {
@@ -62,6 +69,7 @@ body {
 }
 #hd .dpBlock,
 #mainSwiper .dpBlock,
+#customForm .dpBlock,
 #businessPartners .dpBlock,
 #quickMenu .dpBlock,
 #footer .dpBlock {
@@ -69,6 +77,7 @@ body {
 }
 #hd .jcb,
 #mainSwiper .jcb,
+#customForm .jcb,
 #businessPartners .jcb,
 #quickMenu .jcb,
 #footer .jcb {
@@ -76,6 +85,7 @@ body {
 }
 #hd .jcc,
 #mainSwiper .jcc,
+#customForm .jcc,
 #businessPartners .jcc,
 #quickMenu .jcc,
 #footer .jcc {
@@ -83,6 +93,7 @@ body {
 }
 #hd .aic,
 #mainSwiper .aic,
+#customForm .aic,
 #businessPartners .aic,
 #quickMenu .aic,
 #footer .aic {
@@ -90,6 +101,7 @@ body {
 }
 #hd .container,
 #mainSwiper .container,
+#customForm .container,
 #businessPartners .container,
 #quickMenu .container,
 #footer .container {
@@ -98,10 +110,19 @@ body {
 }
 #hd .height100,
 #mainSwiper .height100,
+#customForm .height100,
 #businessPartners .height100,
 #quickMenu .height100,
 #footer .height100 {
   height: 100px;
+}
+#hd .flexDirCol,
+#mainSwiper .flexDirCol,
+#customForm .flexDirCol,
+#businessPartners .flexDirCol,
+#quickMenu .flexDirCol,
+#footer .flexDirCol {
+  flex-direction: column;
 }
 
 @font-face {
@@ -251,6 +272,51 @@ body {
 #mainSwiper .mainSwiperButton * {
   color: inherit;
   --swiper-navigation-size: 75px;
+}
+
+#customForm {
+  background-color: #f04e21;
+  margin-bottom: 100px;
+}
+#customForm .customFormTitle {
+  padding-top: 20px;
+  text-align: center;
+  height: 100px;
+  color: aliceblue;
+}
+#customForm .customForm {
+  width: 100%;
+  height: 400px;
+  background-color: #f04e21;
+  border-radius: 50px;
+}
+#customForm .customForm * {
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: large;
+  border: 3px solid #f04e21;
+}
+#customForm .customForm .FormClientName {
+  top: 7%;
+  height: 50px;
+  width: 40%;
+}
+#customForm .customForm .FormClientEmail {
+  top: 22%;
+  height: 50px;
+  width: 40%;
+}
+#customForm .customForm .FormClientDetail {
+  top: 40%;
+  width: 70%;
+  height: 40%;
+}
+#customForm .customForm .FormClientSubmit {
+  bottom: 5%;
+  width: 20%;
+  height: 10%;
+  color: #f04e21;
 }
 
 #businessPartners {
