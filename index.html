@@ -106,7 +106,17 @@
                     </div>
     
                     <div class="map-box">
-    
+                        <div id="map" style="width:500px;height:400px;"></div>
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63fcf8dab6de88baf904e97b0100b062"></script>
+                        <script>
+                            var container = document.getElementById('map');
+                            var options = {
+                                center: new kakao.maps.LatLng(33.450701, 126.570667),
+                                level: 3
+                            };
+                    
+                            var map = new kakao.maps.Map(container, options);
+                        </script>
                     </div>
     
                     <div class="map-info">
@@ -137,7 +147,34 @@
                 </div>
             </section>
 
-            
+            <section class="size text-center">
+                <div class="title">
+                    <h2>사이즈 안내</h2>
+                    <p>사이즈별 정보를 소개합니다.</p>
+                </div>
+
+                <div class="size-slide">
+                    <div class="swiper position-relative" id="size_sli">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide position-relative">
+                            <img src="./img/size_mini.png" alt="mini" class="position-absolute">
+                          </div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+
+                      </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>

@@ -173,6 +173,11 @@ ul,li {
     padding: 10px 0;
 }
 
+.b-header .s-menu a:hover {
+    background-color:#FF4D14;
+    color: white;
+}
+
 .back {
     position: absolute;
     left: 0;
@@ -330,6 +335,11 @@ section.posi .map-box {
     margin-bottom: 85px;
 }
 
+section.posi .map-box #map {
+    width: 100%;
+    height: 100%;
+}
+
 section.posi .map-info {
     width: 1092px;
     margin: 0 auto;
@@ -374,6 +384,57 @@ section.posi .map-info .subcity>li:not(:nth-child(5n)) {
 section.posi .map-info .subcity>li.gra {
     background: linear-gradient(270deg, #FF4D14 16.81%, #F00 84.96%);
     color: white;
+}
+
+section.size .title {
+    padding-top: 72px;
+    padding-bottom: 53px;
+}
+
+section.size .title h2 {
+    font-size: 37.44px;
+    font-weight: 700;
+    color: #ff8908;
+    margin-bottom: 27px;
+}
+
+section.size .title p {
+    font-size: 19.5px;
+    font-weight: 500;
+    color: #000;
+}
+
+section.size .swiper {
+    width: 822.12px;
+    height: 572px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+section.size .swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+section.size .swiper .swiper-slide img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#size_sli .swiper-button-prev {
+    position: absolute;
+    z-index: 100000;
+    left: -2%;
+}
+
+#size_sli .swiper-pagination {
+    bottom: -94px;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 
