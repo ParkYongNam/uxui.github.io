@@ -18,9 +18,11 @@ body {
 #quickMenu,
 #footer {
 
-    a {
+    a,
+    p {
         text-decoration: none;
         color: black;
+
     }
 
     ul {
@@ -145,15 +147,27 @@ body {
         top: 0;
 
         text-align: center;
-        background-color: #ede0cb;
+
+        background-color: #313131;
 
         font-size: large;
 
         z-index: 10000000;
 
         a {
-            color: black;
+            margin-right: 5%;
         }
+
+        p {
+            margin-bottom: 0;
+            margin-left: 5%;
+        }
+
+        a,
+        p {
+            color: white;
+        }
+
     }
 
     .topBanner {
@@ -165,22 +179,38 @@ body {
 
         padding: 0 2%;
 
-        background-color: #f04e21;
+        background-color: white;
+
+        border-bottom: 1px solid rgba(233, 226, 226, 0.904);
 
         img {
-            width: 80px;
+            width: 150px;
         }
 
-        button {
+        .depth1ul {
+            top: 100%;
+            padding: unset;
+
+            overflow: hidden;     
+        }
+
+
+        a {
             padding: 5px;
-            border-radius: 30px;
-            border: white;
+
+            // border: white;
             margin-right: 5px;
         }
     }
 
     .topOption {
         margin-right: 20px;
+
+        
+
+        .langSelect{
+
+        }
     }
 
     .topMenu {
