@@ -531,7 +531,7 @@ $(function () {
     var subcityinfo = "";
     var infonum = 0;
     for (x in mapinfo) {
-        cityinfo += `<li class='col-4'>${mapinfo[x].city}</li>`;
+        cityinfo += `<li class='col-2'>${mapinfo[x].city}</li>`;
 
     }
 
@@ -548,14 +548,14 @@ $(function () {
 
         subcityinfo = "";
         for (j in mapinfo[$(this).index()].subcity) {
-            subcityinfo += `<li class='col-3'>${mapinfo[$(this).index()].subcity[j].name}</li>`;
+            subcityinfo += `<li class='col-1'>${mapinfo[$(this).index()].subcity[j].name}</li>`;
         }
         $(".subnm").html(subcityinfo);
     })
 
 
     const btnnm = ["Mini", "Small", "Medium", "Large"]
-    const swiper = new Swiper("#sizeBanner .swiper", {
+    const swiperSize = new Swiper("#sizeBanner .swiper", {
         loop: true,
         spaceBetween: 30,
         effect: "fade",
@@ -573,5 +573,10 @@ $(function () {
             nextEl: "#sizeBanner .swiper-button-next",
             prevEl: "#sizeBanner .swiper-button-prev",
         },
+        on: {
+            realIndexChange: function () {
+                document.querySelector(".targetDiv").innerHTML = document.querySelector("#sizeBanner .scon" + this.realIndex).innerHTML
+            }
+        }
     })
 })
