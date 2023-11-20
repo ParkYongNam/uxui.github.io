@@ -574,6 +574,9 @@ $(function () {
             prevEl: "#sizeBanner .swiper-button-prev",
         },
         on: {
+            init: function () {
+                document.querySelector(".targetDiv").innerHTML = document.querySelector("#sizeBanner .scon0").innerHTML
+            },
             realIndexChange: function () {
                 document.querySelector(".targetDiv").innerHTML = document.querySelector("#sizeBanner .scon" + this.realIndex).innerHTML
             }

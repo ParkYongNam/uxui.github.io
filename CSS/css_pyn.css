@@ -73,6 +73,12 @@
 #sizeBanner .btns {
   text-align: center;
 }
+#sizeBanner .bi-square-fill {
+  font-size: 15px;
+}
+#sizeBanner .sizename {
+  color: blue;
+}
 #sizeBanner .swiper-slide {
   max-width: 100%;
   background-color: white;
@@ -135,8 +141,23 @@
   background-position: center;
   background-size: contain;
 }
-#sizeBanner .bg-5 {
-  background-color: rgba(122, 101, 101, 0.2);
+#sizeBanner .swiper-button-prev {
+  top: 35%;
+  left: 25%;
+}
+#sizeBanner .swiper-button-next {
+  top: 35%;
+  right: 25%;
+}
+#sizeBanner .swiper-button-prev::after {
+  content: "\f129";
+  font-family: bootstrap-icons !important;
+  color: #333;
+}
+#sizeBanner .swiper-button-next::after {
+  content: "\f133";
+  font-family: bootstrap-icons !important;
+  color: #333;
 }
 
 @media (max-width: 768px) {

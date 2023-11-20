@@ -97,6 +97,14 @@
         text-align: center;
     }
 
+    .bi-square-fill {
+        font-size: 15px;
+    }
+
+    .sizename {
+        color: blue;
+    }
+
     .swiper-slide {
         max-width: 100%;
         background-color: white;
@@ -171,8 +179,29 @@
         background-size: contain;
     }
 
-    .bg-5 {
-        background-color: rgba(122, 101, 101, 0.2);
+  
+    .swiper-button-prev {
+        top: 35%;
+        left: 25%;
+    }
+
+    .swiper-button-next {
+        top: 35%;
+        right: 25%;
+    }
+
+    .swiper-button-prev::after {
+        content: "\F129";
+        font-family: bootstrap-icons !important;
+        color: #333;
+
+    }
+
+    .swiper-button-next::after {
+        content: "\F133";
+        font-family: bootstrap-icons !important;
+        color: #333;
+
     }
 }
 
