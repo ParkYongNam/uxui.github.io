@@ -344,17 +344,26 @@
 
 
 
-        <!-- 포토리뷰  시작 -->
+        <!-- 포토리뷰  시작 -->g
+        
+        <div id="reviewBanner" class="rel">
 
-        <div id="reviewBanner">
+            <!-- 팝업 광고  -->
+            <div class="popup">
+                <h2></h2>
+                <p><img src="./img/cho/20231116_174343.png" alt=""></p>
+                <button onclick="closePopup()" class="xbtn">오늘 하루 보지 않기</button>
+            </div>
+
+
             <div class="txt_set">
-                <h2> 보관 사이즈별
-                    <br>
-                    실제 이용후기.
+                <h2>보관 사이즈별 실제 이용후기.
                 </h2>
             </div>
+            <div class="background"></div>
+
             <div class="swiper container rel">
-                <div class="swiper-wrapper ">
+                <div class="swiper-wrapper">
 
                     <div class="swiper-slide d-flex justify-content-end pt-5 pt-md-0 flex-md-row flex-column ">
 
@@ -519,22 +528,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="btns position-absolute d-flex right-0 bottom-0 z-up">
+                <div class="btns ">
                     <!-- <div class="btnbox toggle"> <button></button> </div> stop start 버튼-->
-                    <div class="btnbox d-flex">
+             <!--        <div class="btnbox d-flex">
                         <div class="swiper-pagination p-unset"></div>
                         <a href="" title="더보기">
                             <i class="bi bi-plus-lg"></i>
                         </a>
-                    </div>
-                    <div class="btnbox d-flex">
-                        <div class="swiper-button-prev p-unset"></div>
-                        <div class="swiper-button-next p-unset"></div>
+                    </div> -->
+                    <div class="btnbox">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- <button>
+            <button>
                     <p class="title">
                         VIEW MORE
                     </p>
@@ -545,7 +554,7 @@
                         <br>
                         더욱 자세하게 알아보세요.
                     </p>
-                </button> -->
+                </button>
             <!-- <button id="allbtn"></button> -->
         </div>
 

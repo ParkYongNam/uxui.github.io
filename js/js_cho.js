@@ -6,10 +6,10 @@ $(document).ready(function(){
             delay: 4000
         },
     
-        pagination: {
+   /*      pagination: {
             el: '#reviewBanner .swiper-pagination',
             type: 'fraction'
-        },
+        }, */
     
         navigation: {
             nextEl: '#reviewBanner .swiper-button-next',
@@ -18,14 +18,24 @@ $(document).ready(function(){
     
     });
 
-   
-    
-/*     document.querySelector(".toggle").addEventListener("click", function () {
-        console.log(this, typeof this); // 버튼객체를 클릭하고 콘솔확인할것
-        this.classList.toggle('stop'); // this가 태그객체임이 확인되어 그대로 클래스를 주었다가 빼았다가 함
-    }) */
     
 })
+
+//     팝업 광고
+function showPopup() {
+    document.querySelector('.popup').style.display = 'block';
+    document.querySelector('.background').style.display = 'block';
+}
+
+function closePopup() {
+    document.querySelector('.popup').style.display = 'none';
+    document.querySelector('.background').style.display = 'none';
+}
+
+// 페이지 로드 시 팝업 표시
+window.onload = function() {
+    showPopup();
+};
 
 
 
