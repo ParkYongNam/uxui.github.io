@@ -1,0 +1,14 @@
+@media screen and (max-width: 990px) {
+    .b-header {
+        display: none !important;
+    }
+
+    .t-menu {
+        display: none !important;
+    }
+
+    .t-header>div>a {
+        display: inline !important;
+    }
+
+}
