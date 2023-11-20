@@ -59,16 +59,45 @@ a {
 
 /* 레 이 아 웃 */
 #reviewBanner {
+  width: 100%;
+  /* 배경 스타일 */
   margin-bottom: 100px;
 }
+#reviewBanner .xbtn {
+  width: 696px;
+  background-color: white;
+}
+#reviewBanner .popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  background-color: white;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#reviewBanner .background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
 #reviewBanner .txt_set {
-  margin-left: 100px;
+  text-align: center;
+  margin: 2rem auto;
   color: black;
 }
 #reviewBanner * {
   margin: 0;
   padding: 0;
-  font-family: "Pretendard-Regular";
+  font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
   font-weight: 400;
   line-height: 1;
 }
@@ -76,14 +105,16 @@ a {
   width: 1240px;
   margin: 0 auto;
 }
-#reviewBanner img {
+#reviewBanner .swiper-wrapper img {
   max-width: 100%;
   width: 50vw;
   height: 70vh;
+  border-radius: 2rem;
+  box-shadow: 0.2 0.2 0.2 0.5rem;
 }
 #reviewBanner > button {
-  /*    z-index: 200;      //버튼 속성들 임시 대기;  
-  box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+  z-index: 200;
+  box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   padding: 4rem 2rem;
   max-height: 340px;
@@ -93,14 +124,16 @@ a {
   display: inline-block;
   position: absolute;
   bottom: -12%;
-  right: 21%;
-  text-align: left; */
+  right: 31%;
+  text-align: left;
 }
 #reviewBanner > button > p {
   font-weight: bold;
+  margin: 0;
 }
 #reviewBanner > button .title {
   font-size: 28px;
+  line-height: 2;
 }
 #reviewBanner > button .title :after {
   color: white;
@@ -146,39 +179,45 @@ a {
   color: white !important;
 }
 #reviewBanner .btns * :after {
-  font-size: 1rem !important;
+  font-size: 3rem !important;
   line-height: 2;
-  color: white !important;
+  color: orange !important;
 }
 #reviewBanner .btns .btnbox {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0 0 0 1rem;
-  padding: 0 0.54rem;
-  border-radius: 1rem;
-}
-#reviewBanner .btns .btnbox .swiper-pagination {
-  padding: 0 0.5rem;
-}
-#reviewBanner .btns .btnbox .swiper-pagination + a {
-  padding: 0 0.5rem;
-}
-#reviewBanner .btns .btnbox .swiper-button-next {
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0 0.5rem;
-}
-#reviewBanner .btns .btnbox .swiper-button-next :after {
-  content: "\f284";
-  font-family: bootstrap-icons !important;
-}
-#reviewBanner .btns .btnbox .swiper-button-prev {
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0 0.5rem;
-}
-#reviewBanner .btns .btnbox .swiper-button-prev :after {
-  content: "\f285";
-  font-family: bootstrap-icons !important;
+  /*     .swiper-pagination {
+          padding: 0 0.5rem;
+      }
+
+      .swiper-pagination+a {
+          padding: 0 0.5rem;
+      } */
+  /* 
+              background-color: rgba(0, 0, 0, .5);
+              margin: 0 0 0 1rem;
+              padding: 0 0.54rem;
+              border-radius: 1rem; */
+  /* 
+              .swiper-button-next {
+                  :after {
+                      content: "\F284";
+                      font-family: bootstrap-icons !important;
+                  }
+
+                  width: auto;
+                  height: auto;
+                  margin: 0;
+                  padding: 0 0.5rem;
+              }
+   */
+  /*     .swiper-button-prev {
+          :after {
+              content: "\F285";
+              font-family: bootstrap-icons !important;
+          }
+
+          width: auto;
+          height: auto;
+          margin: 0;
+          padding: 0 0.5rem;
+      } */
 }
