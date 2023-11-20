@@ -6,6 +6,9 @@
   font-weight: 400;
 }
 
+#useit {
+  padding: 5rem 0;
+}
 #useit .dsc {
   font-size: 25px;
 }
