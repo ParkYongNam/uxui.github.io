@@ -77,6 +77,10 @@ body {
     .flexDirCol {
         flex-direction: column;
     }
+
+    .flexDirRow {
+        flex-direction: row;
+    }
 }
 
 /////////////////////////////////////////////////////////////////
@@ -291,9 +295,11 @@ body {
 
 #customForm {
 
-    background-color: #f04e21;
+    // background-color: #f04e21;
 
-    margin-bottom: 100px;
+    padding: 5rem 0 10.5rem;
+
+    // margin-bottom: 100px;
 
     .customFormTitle {
 
@@ -303,51 +309,65 @@ body {
 
         height: 100px;
 
-        color: aliceblue;
+        color: #f04e21;
     }
+
+
 
     .customForm {
         width: 100%;
         height: 400px;
-        background-color: #f04e21;
-        border-radius: 50px;
+        // background-color: #f04e21;
+        // border-radius: 50px;
         // border: 7px solid #f04e21;
 
-        * {
-            border: none;
-            border-radius: 50px;
-            text-align: center;
-            font-size: large;
-            border: 3px solid #f04e21;
+
+
+        .essential {
+            margin-left: 0;
+            font-size: 1.6rem;
+            font-size: medium;
         }
 
-
-        .FormClientName {
-            top: 7%;
-            height: 50px;
-            width: 40%;
-        }
-
-        .FormClientEmail {
-            top: 22%;
-            height: 50px;
-            width: 40%;
-        }
-
-        .FormClientDetail {
-            top: 40%;
-            width: 70%;
-            height: 40%;
-
-        }
-
-        .FormClientSubmit {
-            bottom: 5%;
-            width: 20%;
-            height: 10%;
+        sup {
             color: #f04e21;
-
+            font-size: medium;
         }
+
+
+
+        .formRow {
+            row-gap: 5 px;
+
+            margin-bottom: 30px;
+        }
+
+        .formColumn {
+            margin-right: 50px;
+
+            input[type='text'] {
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+        }
+
+        .formBtn {
+
+            button {
+                width: 20rem;
+                height: 3rem;
+
+                background-color: #f04e21;
+                color: white;
+
+                border-radius: 8px;
+                border: transparent;
+            }
+
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+
     }
 }
 
@@ -407,7 +427,7 @@ body {
 
 #quickMenu {
 
-
+    z-index: 1000000 !important;
 
     .quickMenu {
         right: 10%;
@@ -427,6 +447,8 @@ body {
 
         // 카카오톡 상담 아이콘과 간격 조절
         margin-bottom: 10px;
+
+        z-index: 1000000;
     }
 
     .linkKaKaoTalk {
@@ -439,6 +461,7 @@ body {
         text-align: center;
         line-height: 3rem;
 
+        z-index: 1000000;
     }
 
 
@@ -488,13 +511,32 @@ body {
 
             }
 
+            .bi-twitter {
+                color: #00acee;
+                font-size: xx-large;
+
+                margin-left: 5%;
+            }
+
+            .bi-instagram {
+                color: #dc143c;
+                font-size: xx-large;
+
+                margin-left: 5%;
+            }
+
             .csCenter {
                 font-size: 30px;
+                line-height: 5rem;
+
+                // color: #f04e21;
             }
 
             .csNumber {
                 line-height: 3rem;
                 font-size: 30px;
+
+                color: #f04e21;
             }
 
             .hoursOfUse {

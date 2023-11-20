@@ -124,6 +124,14 @@ body {
 #footer .flexDirCol {
   flex-direction: column;
 }
+#hd .flexDirRow,
+#mainSwiper .flexDirRow,
+#customForm .flexDirRow,
+#businessPartners .flexDirRow,
+#quickMenu .flexDirRow,
+#footer .flexDirRow {
+  flex-direction: row;
+}
 
 @font-face {
   font-family: "Pretendard-Black";
@@ -275,48 +283,49 @@ body {
 }
 
 #customForm {
-  background-color: #f04e21;
-  margin-bottom: 100px;
+  padding: 5rem 0 10.5rem;
 }
 #customForm .customFormTitle {
   padding-top: 20px;
   text-align: center;
   height: 100px;
-  color: aliceblue;
+  color: #f04e21;
 }
 #customForm .customForm {
   width: 100%;
   height: 400px;
-  background-color: #f04e21;
-  border-radius: 50px;
 }
-#customForm .customForm * {
-  border: none;
-  border-radius: 50px;
-  text-align: center;
-  font-size: large;
-  border: 3px solid #f04e21;
+#customForm .customForm .essential {
+  margin-left: 0;
+  font-size: 1.6rem;
+  font-size: medium;
 }
-#customForm .customForm .FormClientName {
-  top: 7%;
-  height: 50px;
-  width: 40%;
-}
-#customForm .customForm .FormClientEmail {
-  top: 22%;
-  height: 50px;
-  width: 40%;
-}
-#customForm .customForm .FormClientDetail {
-  top: 40%;
-  width: 70%;
-  height: 40%;
-}
-#customForm .customForm .FormClientSubmit {
-  bottom: 5%;
-  width: 20%;
-  height: 10%;
+#customForm .customForm sup {
   color: #f04e21;
+  font-size: medium;
+}
+#customForm .customForm .formRow {
+  row-gap: 5 px;
+  margin-bottom: 30px;
+}
+#customForm .customForm .formColumn {
+  margin-right: 50px;
+}
+#customForm .customForm .formColumn input[type=text] {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#customForm .customForm .formBtn {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+#customForm .customForm .formBtn button {
+  width: 20rem;
+  height: 3rem;
+  background-color: #f04e21;
+  color: white;
+  border-radius: 8px;
+  border: transparent;
 }
 
 #businessPartners {
@@ -356,6 +365,9 @@ body {
   background-image: url(https://www.lugstay.com/img/partners-logo-sk-telecom.png);
 }
 
+#quickMenu {
+  z-index: 1000000 !important;
+}
 #quickMenu .quickMenu {
   right: 10%;
   bottom: 10%;
@@ -368,6 +380,7 @@ body {
   text-align: center;
   line-height: 3rem;
   margin-bottom: 10px;
+  z-index: 1000000;
 }
 #quickMenu .linkKaKaoTalk {
   width: 50px;
@@ -376,6 +389,7 @@ body {
   border-radius: 50%;
   text-align: center;
   line-height: 3rem;
+  z-index: 1000000;
 }
 
 #footer {
@@ -404,12 +418,24 @@ body {
   color: red;
   font-size: xx-large;
 }
+#footer .footer .customerService .bi-twitter {
+  color: #00acee;
+  font-size: xx-large;
+  margin-left: 5%;
+}
+#footer .footer .customerService .bi-instagram {
+  color: #dc143c;
+  font-size: xx-large;
+  margin-left: 5%;
+}
 #footer .footer .customerService .csCenter {
   font-size: 30px;
+  line-height: 5rem;
 }
 #footer .footer .customerService .csNumber {
   line-height: 3rem;
   font-size: 30px;
+  color: #f04e21;
 }
 #footer .footer .customerService .hoursOfUse {
   margin-top: 50px;
