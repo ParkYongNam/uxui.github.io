@@ -365,12 +365,10 @@ body {
   background-image: url(https://www.lugstay.com/img/partners-logo-sk-telecom.png);
 }
 
-#quickMenu {
-  z-index: 1000000 !important;
-}
 #quickMenu .quickMenu {
   right: 10%;
   bottom: 10%;
+  z-index: 1000000;
 }
 #quickMenu .linkPhone {
   width: 50px;

@@ -427,12 +427,13 @@ body {
 
 #quickMenu {
 
-    z-index: 1000000 !important;
+
 
     .quickMenu {
         right: 10%;
         bottom: 10%;
 
+        z-index: 1000000;
     }
 
     .linkPhone {
