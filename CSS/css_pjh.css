@@ -298,6 +298,7 @@ body {
 #customForm .customForm .essential {
   margin-left: 0;
   font-size: 1.6rem;
+  font-size: medium;
 }
 #customForm .customForm sup {
   color: #f04e21;
