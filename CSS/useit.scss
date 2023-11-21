@@ -64,5 +64,14 @@
         .tab {
             display: none;
         }
+
+        .tab img {
+            width: 302px;
+            height: 302px;
+        }
+
+        .tab span {
+            min-width: 360px;
+        }
     }
 }
