@@ -57,17 +57,8 @@ a {
   margin-top: 20px;
 }
 
-/* 레 이 아 웃 */
-#reviewBanner {
-  width: 100%;
-  /* 배경 스타일 */
-  margin-bottom: 100px;
-}
-#reviewBanner .xbtn {
-  width: 696px;
-  background-color: white;
-}
-#reviewBanner .popup {
+/* 팝업 광고 */
+#popup {
   display: none;
   position: fixed;
   left: 50%;
@@ -78,6 +69,17 @@ a {
   z-index: 1000;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#popup .xbtn {
+  width: 696px;
+  background-color: white;
+}
+
+/* 레 이 아 웃 */
+#reviewBanner {
+  width: 100%;
+  /* 배경 스타일 */
+  margin-bottom: 100px;
 }
 #reviewBanner .background {
   display: none;
@@ -116,7 +118,7 @@ a {
   z-index: 200;
   box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  padding: 4rem 2rem;
+  padding: 2.8em 2rem;
   max-height: 340px;
   max-width: 340px;
   background: #f04e23;
@@ -130,6 +132,7 @@ a {
 #reviewBanner > button > p {
   font-weight: bold;
   margin: 0;
+  line-height: 1.5;
 }
 #reviewBanner > button .title {
   font-size: 28px;

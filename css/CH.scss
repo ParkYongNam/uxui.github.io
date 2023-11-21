@@ -62,26 +62,31 @@ a {
 
 }
 
-/* 레 이 아 웃 */
-#reviewBanner {
-    width:100%;
-   
+/* 팝업 광고 */
+
+#popup {
     .xbtn{
         width:696px;
         background-color: white;
     }
-    .popup {
-        display: none;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border: 1px solid #000;
-        background-color: white;
-        z-index: 1000;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    }
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* 레 이 아 웃 */
+
+#reviewBanner {
+    width:100%;
+   
+   
 
     /* 배경 스타일 */
     .background {
@@ -129,10 +134,10 @@ a {
    
 
     >button {
-           z-index: 200;      //버튼 속성들 임시 대기;  
+    z-index: 200;      
     box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
     cursor: pointer;
-    padding: 4rem 2rem;
+    padding: 2.8em 2rem;
     max-height: 340px;
     max-width: 340px;
     background: #f04e23;
@@ -148,6 +153,7 @@ a {
         >p {
             font-weight: bold;
             margin: 0;
+            line-height: 1.5;
         }
 
         .title {
