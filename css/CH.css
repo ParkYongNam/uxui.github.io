@@ -80,6 +80,8 @@ a {
   width: 100%;
   /* 배경 스타일 */
   margin-bottom: 100px;
+  /* 포토리뷰 오른쪽 글자 리뷰들 */
+  /*   포토리뷰 오른쪽 글자 리뷰들 끝 */
 }
 #reviewBanner .background {
   display: none;
@@ -109,8 +111,8 @@ a {
 }
 #reviewBanner .swiper-wrapper img {
   max-width: 100%;
-  width: 50vw;
-  height: 70vh;
+  width: 500px;
+  height: 676px;
   border-radius: 2rem;
   box-shadow: 0.2 0.2 0.2 0.5rem;
 }
@@ -150,6 +152,8 @@ a {
   line-height: 42px;
   margin-bottom: 30px;
   min-height: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 #reviewBanner .tbox_right .typo {
   font-size: 16px;

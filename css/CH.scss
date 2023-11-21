@@ -124,8 +124,8 @@ a {
     .swiper-wrapper{
         img {
             max-width: 100%;
-            width: 50vw;
-            height: 70vh;
+            width: 500px;
+            height: 676px;
             border-radius: 2rem;
             box-shadow: 0.2 0.2 0.2 0.5rem;
     
@@ -167,7 +167,7 @@ a {
 
         }
     }
-
+/* 포토리뷰 오른쪽 글자 리뷰들 */
     .tbox_right {
         font-family: 'Pretendard-Regular';
         margin-left: 50px;
@@ -177,6 +177,8 @@ a {
             line-height: 42px;
             margin-bottom: 30px;
             min-height: 80px;
+            margin-top: 50px;
+            margin-bottom:50px;
         }
 
         .typo {
@@ -202,6 +204,7 @@ a {
             }
         }
     }
+/*   포토리뷰 오른쪽 글자 리뷰들 끝 */
 
     .swiper-slide {
         background-color: white;
