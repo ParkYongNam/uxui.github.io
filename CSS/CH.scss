@@ -62,26 +62,32 @@ a {
 
 }
 
+/* 팝업 광고 */
+
+#popup {
+    .xbtn {
+        width: 696px;
+        background-color: white;
+    }
+
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* 레 이 아 웃 */
+
 #reviewBanner {
-    width:100%;
-   
-    .xbtn{
-        width:696px;
-        background-color: white;
-    }
-    .popup {
-        display: none;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border: 1px solid #000;
-        background-color: white;
-        z-index: 1000;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    }
+    width: 100%;
+
+
 
     /* 배경 스타일 */
     .background {
@@ -94,12 +100,14 @@ a {
         background: rgba(0, 0, 0, 0.7);
         z-index: 999;
     }
+
     .txt_set {
         text-align: center;
-        margin:2rem auto;
+        margin: 2rem auto;
         color: black;
-    
+
     }
+
     margin-bottom: 100px;
 
 
@@ -116,38 +124,39 @@ a {
         margin: 0 auto;
     }
 
-    .swiper-wrapper{
+    .swiper-wrapper {
         img {
             max-width: 100%;
-            width: 50vw;
-            height: 70vh;
+            width: 500px;
+            height: 676px;
             border-radius: 2rem;
             box-shadow: 0.2 0.2 0.2 0.5rem;
-    
+
         }
     }
-   
+
 
     >button {
-           z-index: 200;      //버튼 속성들 임시 대기;  
-    box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
-    cursor: pointer;
-    padding: 4rem 2rem;
-    max-height: 340px;
-    max-width: 340px;
-    background: #f04e23;
-    color: #fff;
-    display: inline-block;
-    position: absolute;
-    bottom: -12%;
-    right: 31%;
-    text-align: left;
+        z-index: 200;
+        box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+        cursor: pointer;
+        padding: 2.8em 2rem;
+        max-height: 340px;
+        max-width: 340px;
+        background: #f04e23;
+        color: #fff;
+        display: inline-block;
+        position: absolute;
+        bottom: -12%;
+        right: 31%;
+        text-align: left;
 
 
 
         >p {
             font-weight: bold;
             margin: 0;
+            line-height: 1.5;
         }
 
         .title {
@@ -162,6 +171,7 @@ a {
         }
     }
 
+    /* 포토리뷰 오른쪽 글자 리뷰들 */
     .tbox_right {
         font-family: 'Pretendard-Regular';
         margin-left: 50px;
@@ -171,6 +181,8 @@ a {
             line-height: 42px;
             margin-bottom: 30px;
             min-height: 80px;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         .typo {
@@ -197,6 +209,8 @@ a {
         }
     }
 
+    /*   포토리뷰 오른쪽 글자 리뷰들 끝 */
+
     .swiper-slide {
         background-color: white;
         align-items: center;
@@ -218,19 +232,19 @@ a {
         }
 
         .btnbox {
-        /*     .swiper-pagination {
+            /*     .swiper-pagination {
                 padding: 0 0.5rem;
             }
 
             .swiper-pagination+a {
                 padding: 0 0.5rem;
             } */
-/* 
+            /* 
             background-color: rgba(0, 0, 0, .5);
             margin: 0 0 0 1rem;
             padding: 0 0.54rem;
             border-radius: 1rem; */
-/* 
+            /* 
             .swiper-button-next {
                 :after {
                     content: "\F284";
@@ -243,7 +257,7 @@ a {
                 padding: 0 0.5rem;
             }
  */
-        /*     .swiper-button-prev {
+            /*     .swiper-button-prev {
                 :after {
                     content: "\F285";
                     font-family: bootstrap-icons !important;
