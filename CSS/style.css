@@ -157,57 +157,95 @@ ul,li {
 
 .mobile__header {
     position: fixed;
-    z-index: 1000000000;
-    background-color: white;
-    padding: 16px 20px;
-    min-width: 350px;
     top: 0;
-    right: -390px;
+    right: -500px;
     transition: all .4s;
+    background-color: white;
+    z-index: 10000000;
 }
 
-.mobile__header.menuon {
+.mobile__header.trs {
     right: 0;
 }
 
-.mobile__header .mo__menu {
-    display: flex;
+.mobile__header  .mobile__top {
+    background-color: #4A5677;
+    padding: 15px 28px;
+}
+
+.mobile__header  .mobile__top>li:not(:first-child)>a {
+    margin: 0 13px;
+}
+
+.mobile__header  .mobile__top>li:first-child>a {
+    margin-right: 13px;
+}
+
+.mobile__header  .mobile__top>li>a {
+    position: relative;
+    color: white;
+    font-size: 14px;
+}
+
+.mobile__header .mobile__top>li:first-child>a::after,
+.mobile__header .mobile__top>li:nth-child(2)>a::after,
+.mobile__header .mobile__top>li:nth-child(3)>a::after
+ {
+    content:'';
+    display: block;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile__header .mobile__center>li>a {
+    position: relative;
+    display: block;
+    padding: 28px;
     border-bottom: 1px solid rgba(0,0,0,.2);
-    flex-wrap: wrap;
 }
 
-.mobile__header .mo__menu .mo__margin {
-    margin-right: 14px;
-}
-
-.mobile__header .mo__menu>li>a {
+.mobile__header .mobile__center>li>.btn__after::before {
+    content: '\F286';
+    font-family: bootstrap-icons !important;
     display: block;
-    border: 0;
-    padding-bottom: 9px;
-    margin-bottom: -1px;
-    transition: all .4s;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
 }
 
-.mobile__header .mo__menu>li>a.activeclass {
-    border-bottom: 1px solid #000;
-}
-
-.mobile__header .mo__contents .smallmenu {
-    margin-top: 6px;
-}
-
-.mobile__header .mo__contents .smallmenu li a {
+.mobile__header .mobile__center>li>.btn__after::after {
+    content: '\F282';
+    font-family: bootstrap-icons !important;
     display: block;
-    padding: 6px 0;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.mobile__header .mo__contents .account {
-    margin-top: 6px;
+.mobile__header .mobile__center .sub__menu {
+    height: 0;
+    overflow: hidden;
+    transition: all .2s;
 }
 
-.mobile__header .mo__contents .account li a {
+.mobile__header .mobile__center .sub__menu.recover {
+    height: 100%;
+}
+
+.mobile__header .mobile__center .sub__menu>li>a {
     display: block;
-    padding: 6px 0;
+    padding: 28px 15px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-left: 3px solid #4A5677;
+    background-color: #f9f8f8;
 }
 
 .b-header {
@@ -310,38 +348,6 @@ section.slider .swiper-wrapper .swiper-slide .slide__menu li:not(:last-child) a 
     margin-bottom: 33px;
 }
 
-section.slider .swiper .swiper-button-prev::after {
-    content:'\F286';
-    font-family: bootstrap-icons !important;
-    color: black;
-    font-size: .8rem;
-}
 
-section.slider .swiper .swiper-button-next::after {
-    content:'\F282';
-    font-family: bootstrap-icons !important;
-    color: black;
-}
-
-section.slider .swiper .swiper-button-prev,
-section.slider .swiper .swiper-button-next,
-section.slider .swiper .swiper-pagination {
-    position: unset;
-    width: auto;
-    height: auto;
-}
-
-section.slider .swiper .btns {
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-section.slider .swiper .swiper-button-prev {
-    padding: 19px 7px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.2);
-}
 
 

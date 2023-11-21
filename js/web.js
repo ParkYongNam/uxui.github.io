@@ -71,11 +71,15 @@ $('document').ready(function(){
       });
 
       $('.ham_btn').click(function(){
-        $('.mobile__header').addClass('menuon');
         $('.wrap').addClass('bgon');
-        $('.mo__menu>li>a').click(function(){
-          $(this).addClass('activeclass').parent().siblings().find('a').removeClass('activeclass');
-          $('.menu__contents>div').addClass('d-block').removeClass('.d-none').siblings().addClass('d-none');
+        $('.mobile__header').addClass('trs');
+        $('.close').click(function(){
+          $('.wrap').removeClass('bgon');
+        $('.mobile__header').removeClass('trs');
         });
+      });
+
+      $('.btn__after').click(function(){
+        $('.sub__menu').toggleClass('recover');
       });
 });
