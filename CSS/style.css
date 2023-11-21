@@ -309,44 +309,81 @@ section.slider {
 }
 
 section.slider .swiper {
+    padding: 42px 0;
+    width: 85%;
     height: 100%;
-    max-width: 80%;
 }
 
-section.slider .swiper-wrapper .swiper-slide {
-    width: 90% !important;
-    border-radius: 5px 30px;
-    position: relative;
-    z-index: 1000000;
+section.slider .swiper .swiper-wrapper {
+    width: 100%;
+    justify-content: center;
 }
 
-section.slider .swiper-wrapper .swiper-slide1 {
+section.slider .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0;
+    border-radius: 30px;
+    display: flex;
+}
+
+section.slider .swiper .swiper-wrapper .swiper-slide .image {
+    width: 50%;
     height: 100%;
-    background: url('../img/slide_visual_1.jpg') no-repeat center/cover;
+    background: url('../img/slider_visual_1.jpg') no-repeat center/cover;
 }
 
-section.slider .swiper-wrapper .swiper-slide .slide__menu {
-    display: inline-block;
-    padding: 33px 35px;
-    background-color: rgba(0,0,0,.3);
-    border-radius: 5px 30px;
-    position: absolute;
-    top: 2%;
-    right: 2%;
+section.slider .swiper .swiper-wrapper .swiper-slide .dev {
+    padding: 40px 50px;
 }
 
-section.slider .swiper-wrapper .swiper-slide .slide__menu a {
+section.slider .swiper .swiper-wrapper .swiper-slide .dev h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 36px;
+}
+
+section.slider .swiper .swiper-wrapper .swiper-slide .dev h2 span {
     display: block;
-    color: rgba(255,255,255,.4);
 }
 
-section.slider .swiper-wrapper .swiper-slide .slide__menu a.action {
-    color: white;
+section.slider .swiper .swiper-button-prev {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    left: -22px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 100000;
 }
 
-section.slider .swiper-wrapper .swiper-slide .slide__menu li:not(:last-child) a {
-    margin-bottom: 33px;
+section.slider .swiper .swiper-button-next {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    right: -22px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 100000;
 }
+
+section.slider .swiper .swiper-button-prev::after {
+    content: '\F284';
+    font-family: bootstrap-icons !important;
+    color: black;
+    font-size: 1.1rem;
+}
+
+section.slider .swiper .swiper-button-next::after {
+    content: '\F285';
+    font-family: bootstrap-icons !important;
+    color: black;
+    font-size: 1.1rem;
+}
+
+
 
 
 

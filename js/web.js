@@ -19,56 +19,23 @@ $('document').ready(function(){
 
     var swiper = new Swiper('.swiper#new_swi', {
 
-        loop: true,
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+    loop: true,
+        
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-        /* autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        }, */
-
-      slidesPerView: 3,
-      spaceBetween: 180,
-      centeredSlides: true,
-      allowSlidePrev: true,
       slidesPerView: "auto",
+      centeredSlides: true,
+
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
-        type: "fraction",
       },
       
       });
 
-    $('.city>li').click(function(){
-        $(this).toggleClass('sign').siblings().removeClass('sign');
-    });
-
-    $('.subcity>li').click(function(){
-        $(this).toggleClass('gra').siblings().removeClass('gra');
-    });
-
-    var swiper2 = new Swiper('.swiper#size_sli', {
-
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-      });
 
       $('.ham_btn').click(function(){
         $('.wrap').addClass('bgon');
