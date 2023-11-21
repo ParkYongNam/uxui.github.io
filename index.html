@@ -27,7 +27,7 @@
 </head>
 
 <body> <!-- 0.78배수 -->
-    <div class="wrap">
+    <div class="wrap position-relative">
         <div class="ad-header d-flex justify-content-between align-items-center">
             <h2 class="mb-0">새로운 회원가입 이벤트</h2>
             <a href="#">이벤트 확인하러 가기</a>
@@ -47,17 +47,33 @@
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">회원가입</a></li>
                     </ul>
-                    <a href="#" class="d-none"><i class="bi bi-list"></i></a>
+                    <a href="#" class="d-none ham_btn"><i class="bi bi-list"></i></a>
                 </div>
             </div>
-            <div class="mobile__header d-none">
+            <div class="mobile__header">
                 <ul class="mo__menu">
-                    <li><a href="#">회사 소개</a></li>
-                    <li><a href="#">사용 방법</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">리뷰</a></li>
-                    <li><a href="#">고객센터</a></li>      
+                    <li><a href="#" class="mo__margin activeclass">메뉴</a></li>
+                    <li><a href="#" class="mo__account">계정</a></li>
                 </ul>
+
+                <div class="mo__contents">
+                    <div class="menu__contents">
+                        <ul class="smallmenu">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">사용방법</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">리뷰</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="account__contents d-none">
+                        <ul class="account">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="b-header position-relative">
                 <div class="m-container">
@@ -89,23 +105,29 @@
                 <div class="swiper" id="new_swi">
 
                     <div class="swiper-wrapper">
+
                       <div class="swiper-slide swiper-slide1">
-                        <h2>MYZIM STORAGE SYSTEM</h2>
-                        <div class="small-bg"></div>
+                        <ul class="slide__menu">
+                            <li><a href="#" class="action">기숙사 친구 초대 이벤트</a></li>
+                            <li><a href="#">장기 고객 감사 프로모션</a></li>
+                            <li><a href="#">배너 광고 이벤트 프로모션</a></li>
+                        </ul>
                       </div>
+
                       <div class="swiper-slide swiper-slide2">
-                        <h2>MYZIM STORAGE SYSTEM</h2>
-                        <div class="small-bg bg2"></div>
                       </div>
-                      <div class="swiper-slide swiper-slide3"></div>
+
+                      <div class="swiper-slide swiper-slide3">
+                      </div>
+
                     </div>
 
-                    <div class="swiper-pagination"></div>
-                  
-                    
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
+                    <div class="btns">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+s
                   </div>
             </section>
 

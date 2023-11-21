@@ -21,16 +21,27 @@ $('document').ready(function(){
 
         loop: true,
       
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+
+        /* autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        }, */
+
+      slidesPerView: 3,
+      spaceBetween: 180,
+      centeredSlides: true,
+      allowSlidePrev: true,
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: "fraction",
+      },
       
       });
 
@@ -57,5 +68,14 @@ $('document').ready(function(){
           prevEl: '.swiper-button-prev',
         },
       
+      });
+
+      $('.ham_btn').click(function(){
+        $('.mobile__header').addClass('menuon');
+        $('.wrap').addClass('bgon');
+        $('.mo__menu>li>a').click(function(){
+          $(this).addClass('activeclass').parent().siblings().find('a').removeClass('activeclass');
+          $('.menu__contents>div').addClass('d-block').removeClass('.d-none').siblings().addClass('d-none');
+        });
       });
 });

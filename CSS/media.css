@@ -12,3 +12,16 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .swiper-button-prev::after,
+    .swiper-button-prev,
+    .swiper-button-next::after,
+    .swiper-button-next {
+        background: none !important;
+    }
+
+    .swiper-slide h2 {
+        font-size: 25px !important;
+    }
+}
