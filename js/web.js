@@ -21,17 +21,14 @@ $('document').ready(function(){
 
     loop: true,
         
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-      slidesPerView: "auto",
-      centeredSlides: true,
 
       pagination: {
         el: ".swiper-pagination",
+      },
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
       
       });
@@ -48,5 +45,20 @@ $('document').ready(function(){
 
       $('.btn__after').click(function(){
         $('.sub__menu').toggleClass('recover');
+      });
+
+      $('.inner__menu>a').click(function(){
+        $('.inner__menu').toggleClass('dong');
+        
+        let count = 0;
+
+        count++;
+        $('.inner__menu>a>span').html('OPEN');
+
+        if(count == 1) {
+          count = 0;
+          $('.inner__menu>a>span').html();
+        }
+         
       });
 });
