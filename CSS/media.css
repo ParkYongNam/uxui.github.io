@@ -1,3 +1,37 @@
+@media screen and (max-width: 997px) {
+    #addressMap .firstad ul {
+        flex-direction: column;
+    }
+
+    #addressMap .firstad ul li {
+        margin: 0;
+        border: 0;
+    }
+
+    #addressMap .firstad ul li:first-child {
+        border: 1px solid black;
+        position: relative;
+    }
+
+    #addressMap .firstad ul li:first-child::after {
+        content: '\F229';
+        font-family: bootstrap-icons !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #addressMap .firstad ul li:not(:first-child) {
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+}
+
+
+
 @media screen and (max-width: 990px) {
     #my__wrap .b-header {
         display: none !important;

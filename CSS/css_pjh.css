@@ -328,6 +328,61 @@ body {
   border: transparent;
 }
 
+.formAction .form__title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.formAction .form__title h2 {
+  font-size: 36px;
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #f98908;
+  padding-bottom: 20px;
+}
+.formAction .form__wrapper form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formAction .form__wrapper form fieldset {
+  display: none;
+}
+.formAction .form__wrapper form div {
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+.formAction .form__wrapper form div label, .formAction .form__wrapper form div input {
+  display: block;
+}
+.formAction .form__wrapper form div label {
+  padding-bottom: 10px;
+}
+.formAction .form__wrapper form div input {
+  height: 35px;
+}
+.formAction .form__wrapper form div select {
+  width: 200px;
+}
+.formAction .form__wrapper form div select:focus {
+  border: none;
+}
+.formAction .form__wrapper form div:nth-of-type(3) input {
+  display: inline-block;
+  width: 50px;
+}
+.formAction .form__wrapper form div:nth-of-type(3) input:not(:last-of-type)::after {
+  content: "-";
+}
+.formAction .form__wrapper form div textarea {
+  width: 100%;
+}
+.formAction .form__wrapper form div input[type=submit] {
+  background-image: linear-gradient(270deg, #FAFF03 23.29%, #FF8A00 67.3%);
+  border: none;
+  padding: 0 100px;
+  border-radius: 30px;
+  color: white;
+}
+
 #businessPartners {
   position: relative;
   width: 100%;

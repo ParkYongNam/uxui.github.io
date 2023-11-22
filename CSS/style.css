@@ -24,6 +24,11 @@ ul,li {
     margin: 0 auto;
 }
 
+.w-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* layout */
 
 .wrap#my__wrap {

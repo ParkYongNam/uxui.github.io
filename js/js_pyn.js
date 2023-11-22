@@ -559,9 +559,9 @@ $(function () {
         loop: true,
         spaceBetween: 30,
         effect: "fade",
-        autoplay: {
+        /* autoplay: {
             delay: 4000,
-        },
+        }, */
         pagination: {
             el: "#sizeBanner .swiper-pagination",
             clickable: true,

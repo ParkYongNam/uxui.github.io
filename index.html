@@ -43,6 +43,8 @@
     <script src="./data/reveiw__table.js"></script>
     <script src="./js/web.js"></script>
 
+    
+
 </head>
 
 <body>
@@ -256,11 +258,23 @@
                 </div>
     
                 <div class="adMap container d-flex justify-content-between flex-column flex-md-row mt-5">
-                    <div class="weapper">
-                        <div id="map"><img src="./img/yong/mapex.png" alt="gps지도"></div>
+                    <div class="wrapper col-md-4">
+                        <div id="map">
+                            <!-- kakao map api -->
+                            <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=63fcf8dab6de88baf904e97b0100b062"></script>
+                            <script>
+                                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                                var options = { //지도를 생성할 때 필요한 기본 옵션
+                                    center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+                                    level: 3 //지도의 레벨(확대, 축소 정도)
+                                };
+                    
+                                var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+                            </script>
+                        </div>
                     </div>
     
-                    <div class="adMapzone col-md-6 mt-5">
+                    <div class="adMapzone col-md-4 mt-5">
                         <h4><strong>논현점</strong></h4>
                         <p>서울특별시 강남구 강남대로132길 29, 금강빌딩 지하 2층</p>
                         <hr>
@@ -327,25 +341,25 @@
                             <!--부트스트랩 활용-->
     
                             <div class="container d-flex flex-column align-items-center pt-5 swipercontent scon0">
-                                <p class="pt-3">
-                                    <i class="bi bi-square-fill"></i> 사이즈명 &nbsp;&nbsp;<span class="sizename">Mini</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 용도
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="sizename">취미용품/서류/리빙박스</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 가격
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">프로모션가
-                                        월6만원대</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 구성
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">신발
-                                        박스(70~80개) / 우체국
-                                        5호 박스(8~12개)</span>
-                                </p>
+
+                                <ul class="pt-3">
+                                    <li>
+                                        <span class="subject col-5">사이즈명</span>
+                                        <span class="subject__con col-7">MINI</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">용도</span>
+                                        <span class="subject__con col-7">취미용품/서류/리빙박스</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">가격</span>
+                                        <span class="subject__con col-7">프로모션가 월6만원대</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">구성</span>
+                                        <span class="subject__con col-7">신발박스(70~80개) / 우체국 / 5호 박스(8~12개)</span>
+                                    </li>
+                                </ul>
                             </div>
     
                         </div>
@@ -353,51 +367,49 @@
                             class="swiper-slide bg-2 position-relative pt-5 pt-md-0 d-flex justify-content-end flex-column flex-md-row  scon1">
     
                             <div class="container d-flex flex-column align-items-center pt-5 swipercontent">
-                                <p class="pt-3">
-                                    <i class="bi bi-square-fill"></i> 사이즈명 &nbsp;&nbsp;<span class="sizename">Small</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 용도
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="sizename">의류/취미용품/생활용품</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 가격
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">프로모션가
-                                        월9~12만원대</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 구성
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">1~2인 가구 짐보관
-                                        / 우체국
-                                        5호 박스(20~24개)</span>
-                                </p>
+                                <ul class="pt-3">
+                                    <li>
+                                        <span class="subject col-5">사이즈명</span>
+                                        <span class="subject__con col-7">SMALL</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">용도</span>
+                                        <span class="subject__con col-7">의류/취미용품/생활용품</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">가격</span>
+                                        <span class="subject__con col-7">프로모션가 월9~12만원대</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">구성</span>
+                                        <span class="subject__con col-7">1~2인 가구 짐보관 / 우체국 / 5호 박스(20~24개)</span>
+                                    </li>
+                                </ul>
                             </div>
     
                         </div>
                         <div
                             class="swiper-slide bg-3 position-relative pt-5 pt-md-0 d-flex justify-content-end flex-column flex-md-row  scon2">
     
-                            <div class="container d-flex flex-column align-items-center pt-5 swipercontent ">
-                                <p class="pt-3">
-                                    <i class="bi bi-square-fill"></i> 사이즈명 &nbsp;&nbsp;<span class="sizename">Medium</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 용도
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">침대,가구
-                                        보관가능</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 가격
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">프로모션가
-                                        월15~19만원대</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 구성
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">작은 원룸이사에 추천
-                                        / 우체국
-                                        5호 박스(36~54개)</span>
-                                </p>
+                            <div class="container d-flex flex-column align-items-center pt-5 swipercontent">
+                                <ul class="pt-3">
+                                    <li>
+                                        <span class="subject col-5">사이즈명</span>
+                                        <span class="subject__con col-7">MEDIUM</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">용도</span>
+                                        <span class="subject__con col-7">취미 용품 / 서류 / 리빙박스</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">가격</span>
+                                        <span class="subject__con col-7">프로모션가 월 6만원 대</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">구성</span>
+                                        <span class="subject__con col-7">신발 박스(70~80) / 우체국 5호 박스(8~12)</span>
+                                    </li>
+                                </ul>
                             </div>
     
                         </div>
@@ -405,25 +417,24 @@
                             class="swiper-slide bg-4 position-relative pt-5 pt-md-0 d-flex justify-content-end flex-column flex-md-row  scon3">
     
                             <div class="container d-flex flex-column align-items-center pt-5 swipercontent">
-                                <p class="pt-3">
-                                    <i class="bi bi-square-fill"></i> 사이즈명 &nbsp;&nbsp;<span class="sizename">Large</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 용도
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">1.5~2톤
-                                        트럭</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 가격
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">프로모션가
-                                        월32~39만원대</span>
-                                    <br>
-                                    <br>
-                                    <i class="bi bi-square-fill"></i> 구성
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sizename">초대형 사이즈 /
-                                        우체국
-                                        5호 박스(100~120개)</span>
-                                </p>
+                                <ul class="pt-3">
+                                    <li>
+                                        <span class="subject col-5">사이즈명</span>
+                                        <span class="subject__con col-7">LARGE</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">용도</span>
+                                        <span class="subject__con col-7">1.5~2톤트럭</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">가격</span>
+                                        <span class="subject__con col-7">프로모션가 월32~39만원대</span>
+                                    </li>
+                                    <li>
+                                        <span class="subject col-5">구성</span>
+                                        <span class="subject__con col-7">초대형 사이즈 / 우체국 / 5호 박스(100~120개)</span>
+                                    </li>
+                                </ul>
                             </div>
     
                         </div>
@@ -696,7 +707,7 @@
             <!-- 이용 방법 끝 -->
     
             <!-- 맞춤 견적 신청 폼 (회사 타깃) 시작-->
-            <div id="customForm">
+            <!-- <div id="customForm">
                 <div class="container d-flex jcc aic flexDirCol">
                     <div class="customFormTitle">
                         <h2>1 대 1 견적 문의</h2>
@@ -747,6 +758,60 @@
     
     
     
+                </div>
+            </div> -->
+
+            <div class="formAction">
+                <div class="w-container">
+                    <div class="form__title">
+                        <h2>문의하기</h2>
+                        <p>
+                            아래와 같이 문의해주십시오.
+                        </p>
+                    </div>
+
+                    <div class="form__wrapper">
+                        <form action="#">
+                            <fieldset>
+                                <legend>문의하기</legend>
+                            </fieldset>
+
+                            <div class="col-6">
+                                <label for="form__1">이름</label>
+                                <input type="text" name="form__name" id="form__1" value="">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="form__2">문의항목</label>
+                                <select name="select" id="form__2">
+                                    <option value="1">서울시 문의</option>
+                                    <option value="2">부천시 문의</option>
+                                    <option value="3">수원시 문의</option>
+                                </select>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="form__3">연락처</label>
+                                <input type="text" name="form__tel" id="form__3" value="">
+                                <input type="text" name="form__tel" id="form__3" value="">
+                                <input type="text" name="form__tel" id="form__3" value="">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="form__4">이메일</label>
+                                <input type="email" name="form__email" id="form__4" value="">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="form__5">문의 내용</label>
+                                <textarea name="ta" id="form__6" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-center">
+                                <input type="submit" value="문의하기">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
     
