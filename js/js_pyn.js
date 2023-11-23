@@ -560,8 +560,8 @@ $(function () {
         $(".subnm").html(subcityinfo);
 
         //큰지역선택시 첫번째 지점 지도 노출하기
-        options.center = new kakao.maps.LatLng(mapinfo[infonum].subcity[0].mapinfo[0], mapinfo[infonum].subcity[0].mapinfo[1]), //지도의 중심좌표.
-            map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        // options.center = new kakao.maps.LatLng(mapinfo[infonum].subcity[0].mapinfo[0], mapinfo[infonum].subcity[0].mapinfo[1]), //지도의 중심좌표.
+        //     map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
 
     })
