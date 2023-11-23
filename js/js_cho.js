@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    showPopup();
+    //showPopup();
 
     const swiper = new Swiper('#reviewBanner .swiper', {
         loop: true,
