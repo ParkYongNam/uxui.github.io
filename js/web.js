@@ -91,4 +91,21 @@ $('document').ready(function(){
 
       $('#review__swiper .swiper-wrapper').html(import__contents);
 
+     var swiper3 = new Swiper('.swiper#opinion__slider', {
+        // Optional parameters
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+      });
+
 });
